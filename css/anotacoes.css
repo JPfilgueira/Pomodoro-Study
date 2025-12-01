@@ -1,0 +1,80 @@
+/* Estilo para a página Anotações */
+.pagina-anotacoes {
+    display: block;
+}
+
+.cabecalho-anotacoes {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-anotacoes {
+    background-color: var(--cor-fundo-secundaria);
+    border-radius: 8px;
+    padding: 20px;
+    max-height: 400px;
+    max-width: 800px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.item-anotacao {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--cor-fundo-primaria);
+    border-radius: 5px;
+}
+
+.excluir-anotacao {
+    color: red;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.adicionar-anotacao {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.adicionar-anotacao input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 5px 0 0 5px;
+    background-color: var(--cor-fundo-primaria);
+    color: var(--cor-texto-primaria);
+}
+
+.adicionar-anotacao button {
+    padding: 10px 15px;
+    background-color: var(--cor-destaque);
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.seletor-materia {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.botao-materia {
+    padding: 8px 15px;
+    background-color: var(--cor-fundo-secundaria);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: gray;
+}
+
+.botao-materia.ativo {
+    background-color: var(--cor-destaque);
+    color: rgb(0, 255, 55);
+}

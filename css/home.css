@@ -1,0 +1,77 @@
+/* Estilo para a página Home */
+.pagina-home {
+    display: block;
+}
+
+.grade-semanal {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.coluna-dia {
+    background-color: var(--cor-fundo-secundaria);
+    border-radius: 8px;
+    padding: 15px;
+    min-height: 300px;
+}
+
+.coluna-dia h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+.item-materia {
+    background-color: var(--cor-fundo-primaria);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: move;
+    border-left: 4px solid var(--cor-destaque);
+}
+
+.item-materia.arrastando {
+    opacity: 0.5;
+}
+
+/* ADICIONAR ao home.css */
+.item-materia {
+    background-color: var(--cor-fundo-primaria);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: move;
+    border-left: 4px solid var(--cor-destaque);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botao-excluir {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 3px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.botao-excluir:hover {
+    opacity: 1;
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.botao-excluir svg {
+    width: 16px;
+    height: 16px;
+    fill: #ff4444;
+}
+
+.texto-materia {
+    flex: 1;
+    margin-right: 10px;
+}

@@ -1,0 +1,132 @@
+/* Estilo para páginas de login e cadastro */
+.pagina-login {
+    background: linear-gradient(135deg, rgb(109, 0, 0) 0%, black 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container-login {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.card-login {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.logo-login {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo-login img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.logo-login h1 {
+    color: #333;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.form-login h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 600;
+}
+
+.campo-form {
+    margin-bottom: 20px;
+}
+
+.campo-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+}
+
+.campo-form input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    background: white;
+}
+
+.campo-form input:focus {
+    outline: none;
+    border-color: rgb(109, 0, 0);
+}
+
+.botao-principal {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, rgb(109, 0, 0) 0%, #8B0000 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-top: 10px;
+}
+
+.botao-principal:hover {
+    transform: translateY(-2px);
+}
+
+.links-login {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.links-login p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.links-login a {
+    color: rgb(109, 0, 0);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.links-login a:hover {
+    text-decoration: underline;
+}
+
+.mensagem-erro {
+    background: #fee;
+    color: #c33;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    border: 1px solid #fcc;
+}
+
+.mensagem-sucesso {
+    background: #efe;
+    color: #363;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    border: 1px solid #cfc;
+}

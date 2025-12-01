@@ -1,0 +1,212 @@
+/* CSS Padrão (comum a todas as páginas) */
+:root {
+    --cor-fundo-primaria: #ffffff;
+    --cor-fundo-secundaria: #f5f5f5;
+    --cor-texto-primaria: #333333;
+    --cor-texto-secundaria: #666666;
+    --cor-destaque: rgb(109, 0, 0);
+    --cor-fundo-barra-lateral: #f0f0f0;
+    --cor-borda: #e0e0e0;
+}
+
+.tema-escuro {
+    --cor-fundo-primaria: #1a1a1a;
+    --cor-fundo-secundaria: #2d2d2d;
+    --cor-texto-primaria: #f5f5f5;
+    --cor-texto-secundaria: #cccccc;
+    --cor-destaque: rgb(255, 0, 0);
+    --cor-fundo-barra-lateral: #252525;
+    --cor-borda: #404040;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body {
+    background-color: var(--cor-fundo-primaria);
+    color: var(--cor-texto-primaria);
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Barra Lateral */
+.barra-lateral {
+    width: 80px;
+    background-color: var(--cor-fundo-barra-lateral);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    position: fixed;
+    height: 100vh;
+    z-index: 100;
+}
+
+.topo-barra-lateral, .base-barra-lateral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.icone-barra-lateral {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icone-barra-lateral:hover {
+    background-color: var(--cor-fundo-secundaria);
+}
+
+.icone-barra-lateral.ativo {
+    background-color: var(--cor-destaque);
+    color: white;
+}
+
+/* Conteúdo principal */
+.conteudo-principal {
+    flex: 1;
+    margin-left: 80px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.alternador-tema {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: var(--cor-fundo-secundaria);
+    padding: 20px;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.secao-rodape {
+    flex: 1;
+}
+
+.secao-rodape h3 {
+    margin-bottom: 10px;
+    color: var(--cor-texto-primaria);
+}
+
+.secao-rodape ul {
+    list-style: none;
+}
+
+.secao-rodape ul li {
+    margin-bottom: 5px;
+}
+
+.secao-rodape a {
+    color: var(--cor-texto-secundaria);
+    text-decoration: none;
+}
+
+.secao-rodape a:hover {
+    text-decoration: underline;
+}
+
+/* LOGO */
+.container-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.cabecalho h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: var(--cor-texto-primaria);
+}
+
+.conteudo-pagina {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Novos estilos para ícones SVG */
+.icone-barra-lateral svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.icone-barra-lateral {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--cor-texto-primaria);
+}
+
+.icone-barra-lateral.ativo {
+    background-color: var(--cor-destaque);
+    color: white;
+}
+
+.icone-barra-lateral.ativo svg {
+    fill: white;
+}
+
+/* Estilo para o nome do usuário logado */
+.usuario-logado {
+    color: var(--cor-texto-secundaria);
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 15px;
+    white-space: nowrap;
+}
+
+/* Ajuste no cabeçalho para alinhar os elementos */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+}
+
+/* Container para os elementos da direita (usuário + tema) */
+.container-direita {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}

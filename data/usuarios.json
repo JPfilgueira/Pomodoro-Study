@@ -1,0 +1,26 @@
+{
+  "usuarios": [
+    {
+      "email": "admin@teste.com",
+      "nome": "Administrador",
+      "senha": "123456",
+      "dataCadastro": "2024-01-15T10:30:00.000Z"
+    }
+  ],
+  "tarefas": [
+    {
+      "usuarioEmail": "admin@teste.com",
+      "diaSemana": "segunda",
+      "descricao": "Matemática (2 ciclos)",
+      "dataCriacao": "2024-01-15T10:35:00.000Z"
+    }
+  ],
+  "anotacoes": [
+    {
+      "usuarioEmail": "admin@teste.com", 
+      "materia": "Matemática",
+      "texto": "Estude geometria espacial",
+      "dataCriacao": "2024-01-15T10:40:00.000Z"
+    }
+  ]
+}

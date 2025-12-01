@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Study - Home</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="barra-lateral">
+        <div class="topo-barra-lateral">
+            <div class="icone-barra-lateral ativo" id="botao-home">
+                <svg viewBox="0 0 24 24">
+                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                </svg>
+            </div>
+            <div class="icone-barra-lateral" id="botao-anotacoes">
+                <svg viewBox="0 0 24 24">
+                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                </svg>
+            </div>
+            <div class="icone-barra-lateral" id="botao-cronometro">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M16.2,16.2L11,13V7H12.5V12.2L17,14.7L16.2,16.2Z"/>
+                </svg>
+            </div>
+        </div>
+        <div class="base-barra-lateral">
+            <div class="icone-barra-lateral" id="botao-conta">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resto do código permanece IGUAL -->
+    <!-- ... -->
+
+    <!-- Conteúdo Principal -->
+    <div class="conteudo-principal">
+        <div class="cabecalho">
+    <div class="container-logo">
+        <img src="assets/logo.png" alt="Pomodoro Study Logo" class="logo">
+        <h1>Pomodoro Study</h1>
+    </div>
+    <div class="container-direita">
+        <!-- O nome do usuário será inserido aqui pelo JavaScript -->
+        <button class="alternador-tema" id="alternador-tema">🌙</button>
+    </div>
+</div>
+
+        <!-- Conteúdo da Home -->
+        <div class="conteudo-pagina">
+            <div class="pagina-home">
+                <h2 style="margin: 20px 0px;">Minha Rotina de Estudos</h2>
+                <div class="grade-semanal">
+                    <div class="coluna-dia">
+                        <h3>Segunda</h3>
+                        <div class="item-materia" draggable="true">Matemática (2 ciclos)</div>
+                    </div>
+                    <div class="coluna-dia">
+                        <h3>Terça</h3>
+                        <div class="item-materia" draggable="true">Português (3 ciclos)</div>
+                    </div>
+                    <div class="coluna-dia">
+                        <h3>Quarta</h3>
+                        <div class="item-materia" draggable="true">História (2 ciclos)</div>
+                    </div>
+                    <div class="coluna-dia">
+                        <h3>Quinta</h3>
+                        <div class="item-materia" draggable="true">Geografia (2 ciclos)</div>
+                    </div>
+                    <div class="coluna-dia">
+                        <h3>Sexta</h3>
+                        <div class="item-materia" draggable="true">Biologia (3 ciclos)</div>
+                    </div>
+                    <div class="coluna-dia">
+                        <h3>Sábado</h3>
+                        <div class="item-materia" draggable="true">Química (2 ciclos)</div>
+                    </div>
+                    <div class="coluna-dia">
+                        <h3>Domingo</h3>
+                        <div class="item-materia" draggable="true">Física (2 ciclos)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="rodape">
+            <div class="secao-rodape">
+                <h3>Empresa</h3>
+                <ul>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Nossos serviços</a></li>
+                    <li><a href="#">Programa de afiliados</a></li>
+                    <li><a href="#">Política de privacidade</a></li>
+                </ul>
+            </div>
+            
+            <div class="secao-rodape">
+                <h3>Obter Ajuda</h3>
+                <ul>
+                    <li><a href="#">Sugestões</a></li>
+                    <li><a href="#">Contato / Suporte</a></li>
+                    <li><a href="#">Perguntas frequentes (FAQ)</a></li>
+                </ul>
+            </div>
+            
+            <div class="secao-rodape">
+                <h3>Redes Sociais</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/jsonDatabase.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>
